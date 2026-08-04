@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyeccto Web (Lab1)</title>
+</head>
+<body>
+    <header><h1>Mi proyecto web</h1></header>
+
+    <nav class="nav">
+        <ul class="nav__lista">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="Presentacion">
+
+            <h2>Bienvenido a la aplicacion web</h2>
+
+        </section>
+
+        <section class="Caracteristicas">
+
+            <h3>Caracteristicas</h3>
+            <ul>
+                <li>Creacion de front-end</li>
+                <li>Creacion de back-end</li>
+                <li>Combinar ambos elementos</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Unidad 1</th>
+                    <th>Unidad 2</th>
+                    <th>Unidad 3</th>
+                 </tr>
+                <tr>
+                    <td>Front-end</td>
+                    <td>Back-end</td>
+                    <td>Full-stack</td>
+                </tr>
+                <tr>
+                    <td>aspecto</td>
+                    <td>logica</td>
+                    <td>combinacion</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <section class="Contacto">
+
+            <p>Contacto</p>
+            <form action="/registro" method="post">
+                <fieldset>
+
+                    <legend>Datos de contacto</legend>
+
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" required>
+                    <label for="correo">Correo</label>
+                    <input id="correo" name="correo" type="email" required>
+                    <br> <br>
+                    <label for="mensaje">Mensaje</label>
+                    <input id="mensaje" type="text" required minlength="10">
+
+                    
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+    <footer><p>&copy; 2026</p></footer>
+</body>
+</html>
