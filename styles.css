@@ -1,0 +1,115 @@
+.layout {
+    display: grid;
+    gap: 1.5rem;
+
+    grid-template-areas:
+        "header"
+        "nav"
+        "Presentacion"
+        "Caracteristicas"
+        "Contacto"
+        "footer"
+        ;
+}
+.header { 
+    grid-area: header;
+} 
+.nav { 
+    grid-area: nav;
+} 
+.Presentacion {
+    grid-area: Presentacion;
+} 
+.Caracteristicas {
+    grid-area: Caracteristicas;
+} 
+.Contacto {
+    grid-area: Contacto;
+} 
+.footer {
+    grid-area: footer;
+}
+
+/* Mobile-first: estilos base (sin media query) */
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nav {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.Presentacion {
+    display: grid; 
+    grid-template-columns: 1fr; 
+}
+.Caracteristicas {
+    display: grid; 
+    grid-template-columns: 1fr; 
+}
+.Contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Tablet en adelante */
+@media (min-width: 768px) {
+    .layout {
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "Presentacion Presentacion"
+            "Caracteristicas Caracteristicas"
+            "Contacto Contacto"
+            "footer footer";
+    }
+    .header { grid-template-columns: repeat(2, 1fr); }
+    .nav { grid-template-columns: repeat(2, 1fr); }
+    .Presentacion { grid-template-columns: repeat(2, 1fr); }
+    .Caracteristicas { grid-template-columns: repeat(2, 1fr); }
+    .Contacto { grid-template-columns: repeat(2, 1fr); }
+    .footer { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Escritorio en adelante */
+@media (min-width: 1024px) {
+    .header { grid-template-columns: repeat(3, 1fr); }
+    .nav { grid-template-columns: repeat(3, 1fr); }
+    .Presentacion { grid-template-columns: repeat(3, 1fr); }
+    .Caracteristicas { grid-template-columns: repeat(3, 1fr); }
+    .Contacto { grid-template-columns: repeat(3, 1fr); }
+    .footer { grid-template-columns: repeat(3, 1fr); }
+}
+
+----------------------------------------------
+.Presentacion {
+ box-sizing: border-box;
+ width: 100%;
+ padding: 20px;
+ border: 5px solid #080fdb;
+}
+.Caracteristicas {
+ box-sizing: border-box;
+ width: 100%;
+ padding: 20px;
+ border: 5px solid #08db2f;
+}
+.Contacto {
+ box-sizing: border-box;
+ width: 100%;
+ padding: 20px;
+ border: 5px solid #b20303;
+}
+.nav__lista {
+display: flex;
+justify-content: flex-start;
+gap: 70px;
+list-style: none;
+}
+#tabla{
+    text-align: center;
+}
